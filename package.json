@@ -1,0 +1,45 @@
+{
+  "name": "ezoosdotbiz",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack-dev-server --mode development",
+    "start": "webpack --mode development",
+    "test2": "mocha ./tests/*.spec.js --watch --compilers js:babel-register",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
+    "chai-asserttype": "^1.0.5",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.9.3",
+    "react-addons-test-utils": "^15.4.0",
+    "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^7.1.0",
+    "sinon": "^6.3.4",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "redux": "^4.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|styl)$": "identity-obj-proxy"
+    }
+  }
+}
